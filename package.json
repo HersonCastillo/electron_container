@@ -1,0 +1,23 @@
+{
+  "name": "aiCloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron-builder": "^20.20.4"
+  },
+  "build": {
+    "appId": "com.aidersite.aicloud",
+    "asar": true,
+    "target": "external",
+    "win": {
+      "icon": "./favicon.ico"
+    }
+  }
+}
