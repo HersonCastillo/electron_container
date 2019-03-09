@@ -1,15 +1,15 @@
 {
   "name": "aiCloud",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.4.7",
+  "description": "Cloud manager.",
   "main": "main.js",
   "scripts": {
     "build": "electron-builder"
   },
-  "author": "",
+  "author": "Herson Castillo",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
+    "electron": "^2.0.4",
     "electron-builder": "^20.20.4"
   },
   "build": {
@@ -19,5 +19,6 @@
     "win": {
       "icon": "./favicon.ico"
     }
-  }
+  },
+  "dependencies": {}
 }

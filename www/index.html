@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aiCloud Desktop</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+	<header class="mini-head">
+		<small>
+			<b style="margin-left: 10px;">aiCloud</b>
+		</small>
+		<div class="action">
+			<button id="btn-min" title="Minimizar ventana">
+				_
+			</button>
+			<button id="btn-close" title="Cerrar ventana">
+				&times;
+			</button>
+		</div>
+	</header>
+	<section class="container">
+		<iframe src="https://aidersite.com" id="iframe" 
+		class="frame"></iframe>
+	</section>
+	<section class="container" id="spinners-load" style="z-index: 1 !important;">
+		<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+	</section>
+	<script type="text/javascript">
+		require('../index.js');
+		var frame = document.getElementById('iframe');
+		frame.onload = () => document.getElementById('spinners-load').style.zIndex = -2;
+	</script>
+</body>
+</html>
